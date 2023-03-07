@@ -6,6 +6,8 @@ import Barber from '../assets/portfolio/Barber.png';
 import Gravero from '../assets/portfolio/Gravero.png';
 import XMDB from '../assets/portfolio/XMDB.png';
 import Travel from '../assets/portfolio/Travel.png';
+import Contacts from '../assets/portfolio/Contacts.png';
+import Ecommerce from '../assets/portfolio/E-commerce.png';
 
 const portfolios = [
   {
@@ -22,28 +24,41 @@ const portfolios = [
   },
   {
     id: 3,
-    src: Barber,
-    hostLink: 'https://github.com/himanshu-hota/Big-barber',
-    codeLink: 'himanshu-hota.github.io/Big-barber/'
+    src: Contacts,
+    hostLink: 'https://main--jocular-elf-15d6df.netlify.app/',
+    codeLink: 'https://github.com/himanshu-hota/contacts'
   },
   {
     id: 4,
+    src: Ecommerce,
+    hostLink: 'https://e-com-c6253.web.app/',
+    codeLink: 'https://github.com/himanshu-hota/ecommerce'
+  },
+  {
+    id: 5,
+    src: Barber,
+    hostLink: 'https://himanshu-hota.github.io/Big-barber/',
+    codeLink: 'https://himanshu-hota.github.io/Big-barber/'
+  },
+  {
+    id: 6,
     src: Gravero,
     hostLink: 'https://himanshu-hota.github.io/Gravero/',
     codeLink: 'https://github.com/himanshu-hota/Gravero'
   },
   {
-    id: 5,
+    id: 7,
     src: XMDB,
     hostLink: 'https://himanshu-hota.github.io/XMDB/',
     codeLink: 'https://github.com/himanshu-hota/XMDB'
   },
   {
-    id: 6,
+    id: 8,
     src: Travel,
     hostLink: 'https://travel-some.firebaseapp.com/',
     codeLink: 'https://github.com/himanshu-hota/travel-some'
   },
+
 ];
 
 
@@ -77,7 +92,7 @@ const Portfolio = () => {
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
-                alt=""
+                alt={src}
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
